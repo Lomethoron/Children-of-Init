@@ -1,2 +1,6 @@
 /Library
 /Temp
+/.vs
+*.exe
+*.pdb
+Children-of-Init.sln
