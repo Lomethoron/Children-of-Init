@@ -4,3 +4,14 @@
 *.exe
 *.pdb
 Children-of-Init.sln
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
