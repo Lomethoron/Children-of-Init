@@ -13,7 +13,15 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-        transform.position += move * speed * Time.deltaTime;
+        //moving down does nothing
+        if(move.y < 0) {
+            move.Set(move.x, 0, 0);
+        }
+        //jump
+        if (move.y > 0) {
+            move.Set(move.x, 2*move.y, 0);
+        }
+            transform.position += move * speed * Time.deltaTime;
 
     }
 }
